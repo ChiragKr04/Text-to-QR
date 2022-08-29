@@ -1,0 +1,9 @@
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/NOTICES
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/Chirag/Desktop/flutter_temp/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
