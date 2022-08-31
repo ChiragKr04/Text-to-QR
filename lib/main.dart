@@ -34,7 +34,6 @@ class _MyHomeState extends ConsumerState<MyHome> {
     TextEditingController controller = TextEditingController();
     controller.text = ref.watch(generateQrProvider).currentData;
     return Scaffold(
-      appBar: AppBar(),
       floatingActionButton: FloatingActionButton.extended(
         icon: const Icon(
           Icons.qr_code_rounded,
