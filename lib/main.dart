@@ -56,6 +56,20 @@ class _MyHomeState extends ConsumerState<MyHome> {
                   padding: const EdgeInsets.all(8.0),
                   child: ref.watch(generateQrProvider).isQrInit
                       ? QrImage(
+                          errorStateBuilder: (cxt, err) {
+                            return Container(
+                              child: Center(
+                                child: Text(
+                                  "Looks like your input is too long!",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(fontSize: 18),
+                                ),
+                              ),
+                              decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  border: Border.all(color: Colors.black)),
+                            );
+                          },
                           data: ref.watch(generateQrProvider).currentData,
                           size: constraints.maxHeight * 0.5,
                           version: QrVersions.auto,
