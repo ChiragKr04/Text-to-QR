@@ -12,7 +12,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHome extends ConsumerStatefulWidget {
-  const MyHome({Key? key}) : super(key: key);
+  const MyHome({super.key});
+
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _MyHomeState();
@@ -55,19 +57,19 @@ class _MyHomeState extends ConsumerState<MyHome> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ref.watch(generateQrProvider).isQrInit
-                      ? QrImage(
+                      ? QrImageView(
                           errorStateBuilder: (cxt, err) {
                             return Container(
-                              child: Center(
+                              decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  border: Border.all(color: Colors.black)),
+                              child:const  Center(
                                 child: Text(
                                   "Looks like your input is too long!",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(fontSize: 18),
                                 ),
                               ),
-                              decoration: BoxDecoration(
-                                  color: Colors.grey,
-                                  border: Border.all(color: Colors.black)),
                             );
                           },
                           data: ref.watch(generateQrProvider).currentData,
